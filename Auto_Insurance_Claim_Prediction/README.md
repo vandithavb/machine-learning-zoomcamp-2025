@@ -1,6 +1,7 @@
 # 🚗 Auto Insurance Claim Prediction
 
 [![Live API on Render](https://img.shields.io/badge/Live%20API%20Deployment-Render-blue?style=for-the-badge&logo=render)](https://auto-insurance-claim-prediction.onrender.com/docs)
+![Deployed Service Screenshot](https://github.com/vandithavb/machine-learning-zoomcamp-2025/blob/main/Auto_Insurance_Claim_Prediction/deployed%20model%20on%20render.png?raw=true)
 
 This project focuses on building, optimizing, and deploying a machine learning model to predict whether an individual will file an insurance claim, based on various driver, vehicle, and demographic features. The goal is to assist insurance companies in better risk assessment and premium optimization, thus addressing a key challenge in insurance risk management.
 
@@ -93,5 +94,6 @@ Run the training script to generate the **`model.bin`** file, which is necessary
 
 ```bash
 python train.py
+
 
 
