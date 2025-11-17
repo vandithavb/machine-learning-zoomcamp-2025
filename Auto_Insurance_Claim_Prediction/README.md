@@ -19,11 +19,11 @@ The primary objective is to develop a highly accurate classification model that 
 - Performed extensive data cleaning & encoding  
 - Conducted EDA (distributions, correlations, feature importance)  
 - Trained 3 models: Logistic Regression, Decision Tree, Random Forest  
-- Parameter
+- Parameter Tuning
 - Selected Random Forest as best model  
 - Exported complete training pipeline into `train.py`  
 - Saved final model as `model.bin`  
-- Built FastAPI inference server (`app/predict.py`)  
+- Built FastAPI inference server (`predict.py`)  
 - Created Dockerfile for containerization  
 - Used `uv` for virtual environment  
 - Deployed Dockerized API to Render.com  
@@ -196,6 +196,7 @@ This project is deployed as a **Dockerized FastAPI service** on Render.
 6. Service deployed with a public prediction endpoint  
 
 You can test the `/predict` endpoint directly from the Swagger UI using the sample JSON provided in this README.
+
 
 
 
