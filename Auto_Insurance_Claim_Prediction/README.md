@@ -43,6 +43,27 @@ The trained model is deployed as a production-ready microservice using FastAPI a
   * **Deployment (Render.com):** The Docker image is deployed to **Render.com**, providing a publicly accessible prediction API.
 
 
+## 🚀 Deployment Architecture (FastAPI + Docker + Render)
+
+### ✔ Inference API (`app/main.py`)
+- Loads `model.bin`
+- Defines `/predict` endpoint
+- Runs using **Uvicorn**
+- Accepts JSON input and returns prediction + probability
+
+### ✔ Containerization (`Dockerfile`)
+- Python 3.9 base
+- Installs dependencies from `requirements.txt`
+- Runs FastAPI app via Uvicorn
+- Makes deployment reproducible & portable
+
+### ✔ Cloud Deployment (Render.com)
+The Dockerized API is deployed to Render.
+
+### 🔗 **Live API Documentation**
+**https://auto-insurance-claim.onrender.com/docs**
+
+
 
 ## 🛠️ Local Setup and Run (Instructions)
 
@@ -65,13 +86,6 @@ You will need the following installed:
     cd machine-learning-zoomcamp-2025/Auto_Insurance_Claim_Prediction
     ```
 
-2.  **Install Dependencies (`requirements.txt`):**
-
-    ```bash
-    uv venv
-    source .venv/bin/activate
-    uv pip install -r requirements.txt
-    ```
 
 ### 2. Training the Model (`train.py`)
 
@@ -79,3 +93,5 @@ Run the training script to generate the **`model.bin`** file, which is necessary
 
 ```bash
 python train.py
+
+
