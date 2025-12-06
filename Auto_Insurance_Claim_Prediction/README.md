@@ -43,7 +43,7 @@ The project followed a standard Machine Learning workflow, with all analysis and
 
 1.  **Data Preparation and Cleaning:** Handling missing values, encoding categorical features, and preparing the dataset for modeling.
 2.  **EDA, Feature Importance:** Exploratory Data Analysis was performed, followed by techniques like correlation analysis and **Feature Importance** plots to guide feature selection.
-3.  **Model Selection and Tuning:** We trained and evaluated three models: Logistic Regression, Decision Tree, and Random Forest. **Random Forest Classifier** was selected due to its superior performance, specifically its high **ROC AUC score**, which is vital for a risk prediction problem. Hyperparameters were tuned to maximize this performance metric.
+3.  **Model Selection and Tuning:** Trained and evaluated three models: Logistic Regression, Decision Tree, and Random Forest. **Random Forest Classifier** was selected due to its superior performance, specifically its high **ROC AUC score**, which is vital for a risk prediction problem. Hyperparameters were tuned to maximize this performance metric.
 
 ## ⚙️ Model Persistence (`train.py`)
 
@@ -196,6 +196,7 @@ This project is deployed as a **Dockerized FastAPI service** on Render.
 6. Service deployed with a public prediction endpoint  
 
 You can test the `/predict` endpoint directly from the Swagger UI using the sample JSON provided in this README.
+
 
 
 
